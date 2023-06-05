@@ -17,3 +17,5 @@ unset($_SESSION['error']);
 
 </form>
 <a href="auth_form.php">Авторизация</a>
+<br>
+<a href="../php/global.php">На главную</a>

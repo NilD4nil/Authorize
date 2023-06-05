@@ -13,16 +13,13 @@ $themes = select('SELECT * FROM themes');
     <title>Document</title>
 </head>
 <body>
-<header>
-    <a href="./pages/auth_form.php">Авторизация</a>
-</header>
 <div class="content">
 <?php if(!empty($_SESSION['user_id'])){?>
     <form action="./php/adding_theme.php" method="post" enctype="multipart/form-data">
-        <input type="text" name="title" placeholder="Название темы"><br>
-        <textarea name="text" placeholder="Первое сообщение темы:">
+        <input type="text" name="title" placeholder="Название фильма"><br>
+        <textarea name="text" placeholder="Первое сообщение рецензии:">
         </textarea><input type="file" name="cover"><br>
-        <input type="submit" value="Создать тему">
+        <input type="submit" value="Создать рецензию">
     </form>
 <?php } ?>
     <hr>
@@ -37,7 +34,7 @@ $themes = select('SELECT * FROM themes');
     <?php } ?>
 </div>
 <div>
-    <form action="delete_theme.php" method="post">
+    <form action="./php/delete_theme.php" method="post">
         <input type="submit" value="Удаление фильма">
 </div>
 </body>
@@ -47,12 +44,12 @@ $themes = select('SELECT * FROM themes');
 <head>
     <meta charset="UTF-8">
     <title>123</title>
-    <link rel="stylesheet" href="mainstyle.css">
+    <link rel="stylesheet" href="./php/mainstyle.css">
 </head>
 <body>
 <div class="container">
     <header>
-        <a class="icons" href="../pages/profile.php">Профиль</a>
+        <a class="icons" href="./pages/profile.php">Профиль</a>
     </header>
 </div>
 </body>

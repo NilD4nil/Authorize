@@ -22,10 +22,10 @@ $user_name = $user[0]['name'];
 
     <input type="submit" value="Изменить">
 
-    <form action="" method="post">
+    <form action="../php/delete_user.php" method="post">
         <h2>Удаление аккаунта</h2><br>
         <input type="submit" value="Удалить">
 
-
     </form>
+    <a href="../index.php">На главную</a>
 </form>

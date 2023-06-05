@@ -22,7 +22,7 @@ else{
             'login' => $login,
             'password' => $password
         ]);
-        header('LOCATION: ../pages/auth_form.php');
+        header('LOCATION: global.php');
     }
 }
 ?>
